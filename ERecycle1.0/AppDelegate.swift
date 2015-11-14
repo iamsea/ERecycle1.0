@@ -10,7 +10,8 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    var isLogin:Bool = false
     var window: UIWindow?
 
 
@@ -40,6 +41,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+//    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+//        if !isLogin {
+//            let sb = UIStoryboard(name: "Main", bundle: nil)
+//            let logn = sb.instantiateViewControllerWithIdentifier("loginViewController")
+//            self.window?.rootViewController?.presentViewController(logn, animated: true, completion: nil)
+//            isLogin = true
+//            print("hello")
+//        }
+//        return true
+//    }
 
 
 }
